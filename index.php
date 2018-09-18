@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>inner iframe</title>
+  <title>main page</title>
 </head>
   <body>
     <div>
-      inner iframe
+      main page
     </div>
+    <iframe src="http://127.0.0.1:8887/localiframe.html" id="localIframe"></iframe>
 
-    <script>
+    <!--<script>
     window.onload = function(){
         window.postMessage("post message here",
             "127.0.0.1:8887/main.html");
 
     }
-    </script>
+    </script>-->
   </body>
 </html>
