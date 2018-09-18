@@ -12,7 +12,7 @@
 
 
     <script>
-      window.addEventListener("message", receiveMessage);
+      window.addEventListener("message", receiveMessage,false);
 
       function receiveMessage(event)
       {
