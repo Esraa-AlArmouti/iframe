@@ -12,12 +12,13 @@
 
 
     <script>
-    window.onload = function(){
       window.addEventListener("message", receiveMessage);
 
       function receiveMessage(event)
       {
+        var message;
         // Do we trust the sender of this message?
+        console.log(event);
         if (event.origin !== "https://iframedomains.herokuapp.com/"){
           return;
         }
@@ -27,17 +28,7 @@
 
       document.getElementById('message').innerHTML = message;
       }
-    }
     </script>
 
-
-
-    <!--<script>
-    window.onload = function(){
-        window.postMessage("post message here",
-            "127.0.0.1:8887/main.html");
-
-    }
-    </script>-->
   </body>
 </html>
