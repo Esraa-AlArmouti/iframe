@@ -12,7 +12,7 @@
 
 
     <script>
-
+    window.onload = function(){
       window.addEventListener("message", receiveMessage);
 
       function receiveMessage(event)
@@ -27,7 +27,7 @@
 
       document.getElementById('message').innerHTML = message;
       }
-
+    }
     </script>
 
 
