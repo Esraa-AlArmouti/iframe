@@ -9,7 +9,7 @@
 
   <p>another iframe</p>
   <script>
-    window.postMessage({source: "dfp"}, "*");
+    window.postMessage("hello there!", "*");
   </script>
 
 </body>
